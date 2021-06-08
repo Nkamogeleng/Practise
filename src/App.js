@@ -19,19 +19,21 @@ We using the state hook
 
 
 // function App() {
-//   const [item, setItems] = useState('');
-//   const [todos, SetTodos] = useState([]);
+  // eslint-disable-next-line
+  const [item, setItems] = useState('');
+  const [todos, SetTodos] = useState([]);
 
 //   const handleSubmit =(event) => {
 //     // We stop the refresh
 //     event.preventDefault();
 
-//     // takes the strings inputed, set them attach the new string. 
-//     // the three dots before todos is the array of the value of todos.
-//     // so we basically have 3 elements and we adding a new a element to them
-//     SetTodos([...todos, event.target.value]);
-//     setItems('')
-//   }
+    // takes the strings inputed, set them attach the new string. 
+    // the three dots before todos is the array of the value of todos.
+    // so we basically have 3 elements and we adding a new a element to them
+    // eslint-disable-next-line
+    SetTodos([...todos, event.target.value]);
+    setItems('')
+  }
 
 //   const indexTodo = index => {
 //     const newTodos = [...todos];
